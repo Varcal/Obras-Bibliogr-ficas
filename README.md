@@ -32,7 +32,8 @@ dotnet restore
 dotnet run
 A api estará rodando em http://localhost:5000
 
-A aplicação foi criar utilizando Angular 8
+A aplicação foi criada utilizando Angular 8
+
 Para iniciar a aplicação
 - Abrir o prompt, ir até o diretório WebApp
 - Executar os comandos
