@@ -14,6 +14,7 @@ namespace GuideInvestimentos.Infra_Dados.Contextos
         public GuideDbContext(IConfiguration configuration)
         {
             _configuration = configuration;
+            Database.Migrate();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
+﻿using System.Text;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GuideInvestimentos.Infra_Dados.Migrations
@@ -19,6 +20,13 @@ namespace GuideInvestimentos.Infra_Dados.Migrations
                 {
                     table.PrimaryKey("PK_Autor", x => x.Id);
                 });
+
+            var sql = new StringBuilder();
+            sql.AppendLine("INSERT INTO Autor(Nome)");
+            sql.AppendLine("VALUES('ademir'), ('Carlos   drummond DE Andrade'), ('João da SilVA'), ('Maria das NeVes'), ('Ana LIMA SOBRinha'),");
+            sql.AppendLine("('JOSÉ Silva Neto'), ('André Luis da Silva Neto'), ('Ulisses Ezequiel Junior'), ('JoÃo Neto'), ('NEto')");
+
+            migrationBuilder.Sql(sql.ToString());
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
