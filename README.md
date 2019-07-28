@@ -23,4 +23,19 @@ As seguintes regras devem ser seguidas nesta formatação:
 ## Procedimento para entrega
 Realize um fork deste repositório, desenvolva sua solução e encaminhe o seu repositório com o seu código. Arquivos compactados não serão aceitos.
 
-Altere o arquivo README para descrever quais componentes foram utilizados e como sua aplicação deverá ser executada.
+A api foi criada utilizando Asp.Net Core 2.2 com SQL SERVER
+
+Para iniciar a Api:
+- Abrir o prompt, ir até o diretório GuideInvestimento.Api  que se encontra em Api/src/
+- Executar os comandos
+dotnet restore
+dotnet run
+A api estará rodando em http://localhost:5000
+
+A aplicação foi criar utilizando Angular 8
+Para iniciar a aplicação
+- Abrir o prompt, ir até o diretório WebApp
+- Executar os comandos
+npm install 
+ng serve
+A aplicação estará rodando em http://localhost: 4200
