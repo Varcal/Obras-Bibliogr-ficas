@@ -1,0 +1,29 @@
+<div class="mt-3">
+    <h2>Autores</h2>
+</div>
+<div class="row mt-5">
+    <div class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">           
+            <label for="quantidade" class="mr-2">Digite a quantidade: </label>
+            <input [(ngModel)]="quantidade" min="0" type="number" class="form-control" id="quantidade" />
+            {{q}}
+        </div>
+        <button type="submit" class="btn btn-dark mb-2" (click)="selecionarPorQuantidade()">Pesquisar</button>
+    </div>
+</div>
+<div class="row">
+    <table class="table table-hover mt-4">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome do Autor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let autor of autores">
+                <th scope="row">{{autor.id}}</th>
+                <td>{{autor.nome}}</td>
+            </tr>        
+        </tbody>
+    </table>
+</div>

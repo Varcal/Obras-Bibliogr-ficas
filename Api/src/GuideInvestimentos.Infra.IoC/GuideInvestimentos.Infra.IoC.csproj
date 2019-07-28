@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GuideInvestimentos.Dominio\GuideInvestimentos.Dominio.csproj" />
+    <ProjectReference Include="..\GuideInvestimentos.Infra.Dados\GuideInvestimentos.Infra.Dados.csproj" />
+  </ItemGroup>
+
+</Project>
